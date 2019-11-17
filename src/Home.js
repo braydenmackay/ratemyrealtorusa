@@ -36,7 +36,7 @@ const Home = () => {
         </div>
 
         <div className="see-top-rated">
-          <Link to="/top-rated">See Realtors</Link>
+          <Link to="/top-rated">See Top Rated Realtors</Link>
         </div>
       </div>
 
