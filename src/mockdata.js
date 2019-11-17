@@ -9,8 +9,9 @@ const Mockdata = () => {
 
         <div className="top-rated-info-container">
           <div className="top-rated-name-location">
-            Brayden MacKay / Orem, UT.
+            Scott M / Salt Lake, UT.
           </div>
+          <div className="top-rated-brokerage">Brokerage: KW</div>
           <div className="top-rated-rating">5 Stars</div>
 
           {/* <div className="top-rated-link" key={results.id}>
@@ -25,7 +26,12 @@ const Mockdata = () => {
                     Click here to see reviews
                   </Link>
                 </div> */}
-          <button>Click here to view reviews</button>
+          <p>
+            Scott is an absolute professional. He knows all of his stuff and has
+            been very helpful. You get the sense that you're going to be taken
+            care of right away when you meet him. He really goes above and
+            beyond to help his clients.
+          </p>
         </div>
       </div>
 
@@ -34,11 +40,16 @@ const Mockdata = () => {
 
         <div className="top-rated-info-container">
           <div className="top-rated-name-location">
-            Brayden MacKay / Orem, UT.
+            Chris Mitchell / Orem, UT.
           </div>
-          <div className="top-rated-rating">5 Stars</div>
+          <div className="top-rated-brokerage">Brokerage: Best Home Realty</div>
+          <div className="top-rated-rating">4 Stars</div>
 
-          <button>Click here to view reviews</button>
+          <p>
+            Chris was good to work with. At times a little abrasive. But he did
+            good work for us on our new home search and was very helpful in
+            negotiations.
+          </p>
         </div>
       </div>
 
@@ -47,11 +58,20 @@ const Mockdata = () => {
 
         <div className="top-rated-info-container">
           <div className="top-rated-name-location">
-            Brayden MacKay / Orem, UT.
+            Gina Backalski / Provo, UT.
           </div>
-          <div className="top-rated-rating">5 Stars</div>
+          <div className="top-rated-brokerage">
+            Brokerage: Better Homes Real Estate
+          </div>
+          <div className="top-rated-rating">1 Star</div>
 
-          <button>Click here to view reviews</button>
+          <p>
+            Worked with Gina for a few weeks. She was very pushy. In order to
+            get the deal worked out, she was going to have to lower her
+            comission. Because of this she tried really hard to push her client
+            to a different home. A good realtor should have their clients best
+            interest at heart, not their own!
+          </p>
         </div>
       </div>
     </div>

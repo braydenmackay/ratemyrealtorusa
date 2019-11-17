@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import axios from "axios"
-// import Mockdata from "./mockdata"
+import Mockdata from "./mockdata"
 
 const Home = () => {
   const [first, setFirst] = React.useState("")
@@ -83,7 +83,7 @@ const Home = () => {
         </form>
       </div>
 
-      {/* <Mockdata /> */}
+      <Mockdata />
     </div>
   )
 }
