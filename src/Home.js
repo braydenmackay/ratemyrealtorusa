@@ -2,13 +2,14 @@ import React from "react"
 import { Link } from "react-router-dom"
 import axios from "axios"
 import Mockdata from "./mockdata"
+import Footer from "./footer"
 
 const Home = () => {
   const [first, setFirst] = React.useState("")
   const [last, setLast] = React.useState("")
   const [email, setEmail] = React.useState("")
-  const [textOne, setTextOne] = React.useState("SITE LAUNCHING SOON!!")
-  const [textTwo, setTextTwo] = React.useState("SIGN UP TO GET NOTIFIED!!!!")
+  const [textOne, setTextOne] = React.useState("COMING TO YOUR STATE SOON!")
+  const [textTwo, setTextTwo] = React.useState("SIGN UP TO LEAVE A REVIEW!")
 
   const handleOnClick = e => {
     e.preventDefault()
@@ -23,13 +24,20 @@ const Home = () => {
         setLast("")
         setEmail("")
         setTextOne("Thank You for signing up!")
-        setTextTwo("You will be notified by email when the site launches.")
+        setTextTwo(
+          "You will be notified by email when you can begin leaving reviews."
+        )
       })
       .catch(error => console.log("handleOnClick error", error))
   }
 
   return (
     <div className="home-page">
+      <div className="heading-text">
+        <div>America's site for </div>
+        <div className="authentic"> AUTHENTIC </div>
+        <div> realtor reviews</div>
+      </div>
       <div className="links-wrapper">
         <div className="leave-rating">
           <Link to="/leave-rating">Leave a Rating</Link>
@@ -42,7 +50,7 @@ const Home = () => {
 
       <div className="body-text">
         <h1>{textOne}</h1>
-        <h1>{textTwo}</h1>
+        <h2>{textTwo}</h2>
       </div>
 
       <div className="sign-up-form">
@@ -84,6 +92,7 @@ const Home = () => {
       </div>
 
       <Mockdata />
+      <Footer />
     </div>
   )
 }
